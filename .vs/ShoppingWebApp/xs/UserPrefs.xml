@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{FC5E0D10-E06D-4F0A-B1C9-1D22C6E8BA4B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/wwwroot/js/site.js">
+    <Files>
+      <File FileName="ShoppingWebApp/Controllers/HomeController.cs" Line="48" Column="44" />
+      <File FileName="ShoppingWebApp/Models/Product.cs" Line="8" Column="30" />
+      <File FileName="ShoppingWebApp/appsettings.json" Line="1" Column="2" />
+      <File FileName="ShoppingWebApp/Models/ShoppingDatabaseSettings.cs" />
+      <File FileName="ShoppingWebApp/Services/ProductService.cs" Line="15" Column="66" />
+      <File FileName="ShoppingWebApp/Views/Home/Index.cshtml" Line="1" Column="19" />
+      <File FileName="ShoppingWebApp/Views/_ViewImports.cshtml" />
+      <File FileName="ShoppingWebApp/Views/_ViewStart.cshtml" />
+      <File FileName="ShoppingWebApp/Views/Shared/_Layout.cshtml" Line="53" Column="126" />
+      <File FileName="ShoppingWebApp/Properties/launchSettings.json" />
+      <File FileName="ShoppingWebApp/Startup.cs" Line="36" Column="86" />
+      <File FileName="ShoppingWebApp/Models/Category.cs" Line="15" Column="27" />
+      <File FileName="ShoppingWebApp/Models/ProductCategory.cs" Line="10" Column="45" />
+      <File FileName="ShoppingWebApp/Models/Document.cs" Line="9" Column="41" />
+      <File FileName="ShoppingWebApp/Services/IProductService.cs" Line="8" Column="30" />
+      <File FileName="ShoppingWebApp/Models/BsonCollectionAttribute.cs" Line="14" Column="2" />
+      <File FileName="ShoppingWebApp/wwwroot/css/site.css" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/wwwroot/js/site.js" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ShoppingWebApp" expanded="True">
+            <Node name="ShoppingWebApp" expanded="True">
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True">
+                  <Node name="site.js" selected="True" />
+                </Node>
+                <Node name="lib" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ShoppingWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
