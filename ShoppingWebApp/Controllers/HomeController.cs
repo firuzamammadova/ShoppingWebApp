@@ -13,39 +13,39 @@ namespace ShoppingWebApp.Controllers
     public class HomeController : Controller
     {
 
-        private readonly IGenericService<Product> _bookService;
+        private readonly IUnitOfWork uow;
 
-        public HomeController(IGenericService<Product> bookService)
+        public HomeController(IUnitOfWork _uow)
         {
-            _bookService = bookService;
+            uow = _uow;
         }
 
    
-        [HttpGet("{id:length(24)}", Name = "GetBook")]
+        [HttpGet("{id:length(24)}", Name = "GetProduct")]
         public ActionResult<Product> Get(int id)
         {
-            var book = _bookService.Get(id);
+            var product = uow.Products.Get(id);
 
-            if (book == null)
+            if (product == null)
             {
                 return NotFound();
             }
 
-            return book;
+            return product;
         }
         public ActionResult<Product> Create()
         {
-            Product book = new Product() { ProductName = "Test", Price = 111 };
-            _bookService.Add(book);
+            Product product = new Product() { ProductName = "Test", Price = 111 };
+            uow.Products.Add(product);
 
-            return CreatedAtRoute("GetBook", new { id = book.Id }, book);
+            return CreatedAtRoute("GetProduct", new { id = product.Id }, product);
         }
 
         
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(_bookService.GetAll());
+            return View(uow.Products.GetAll());
         }
     }
 }

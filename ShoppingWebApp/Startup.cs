@@ -34,6 +34,9 @@ namespace ShoppingWebApp
             services.AddSingleton<IShoppingDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<ShoppingDatabaseSettings>>().Value);
             services.AddSingleton(typeof(IGenericService<>),typeof(GenericService<>));
+
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             //services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             services.AddControllers();
         }
