@@ -36,3 +36,6 @@
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/ShoppingWebApp.dll
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/ShoppingWebApp.pdb
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/ShoppingWebApp.genruntimeconfig.cache
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CategoryMenu/Default.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/FeaturedProducts/Default.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ProductItem.cshtml.g.cs

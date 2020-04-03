@@ -38,6 +38,11 @@ namespace ShoppingWebApp.Services
         public void Add(TDocument book)
         {
             _collection.InsertOne(book);
+            
+        }
+        public void AddMany(IEnumerable<TDocument> documents)
+        {
+            _collection.InsertMany(documents);
         }
 
         public void Edit(string id, TDocument bookIn)

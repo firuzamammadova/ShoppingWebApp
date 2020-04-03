@@ -5,11 +5,10 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace ShoppingWebApp.Models
 {
-    public class Category
+    [BsonCollection("Categories")]
+    public class Category : Document
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public int CategoryId { get; set; }
+       
         public string CategoryName { get; set; }
 
         public virtual List<ProductCategory> ProductCategories { get; set; }

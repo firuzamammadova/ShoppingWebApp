@@ -25,6 +25,8 @@ namespace ShoppingWebApp.Models
         public bool IsFeatured { get; set; }
 
         public List<ProductCategory> ProductCategories { get; set; }
+        public List<Image> Images { get; set; }
+        public List<ProductAttribute> Attributes { get; set; }
 
 
     }

@@ -11,6 +11,11 @@
     <Folder Include="Services\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="Components\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\CategoryMenu\" />
+    <Folder Include="Views\Shared\Components\FeaturedProducts\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver.Core" Version="2.10.2" />
