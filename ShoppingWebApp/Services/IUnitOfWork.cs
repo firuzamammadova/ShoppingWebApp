@@ -10,7 +10,7 @@ namespace ShoppingWebApp.Services
         IGenericService<Image> Images { get; }
         IGenericService<ProductAttribute> Attributes { get; }
         IGenericService<ProductCategory> ProductCategories { get; }
-
+        IGenericService<Order> Orders { get; }
 
     }
 }

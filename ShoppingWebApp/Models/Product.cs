@@ -12,7 +12,7 @@ namespace ShoppingWebApp.Models
 
         [BsonElement("Name")]
         public string ProductName { get; set; }
-        public decimal Price { get; set; }
+        public double Price { get; set; }
 
         public string Image { get; set; }
 

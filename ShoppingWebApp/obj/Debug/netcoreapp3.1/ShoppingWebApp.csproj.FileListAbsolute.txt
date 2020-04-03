@@ -39,3 +39,6 @@
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CategoryMenu/Default.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/FeaturedProducts/Default.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ProductItem.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/Details.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/List.cshtml.g.cs

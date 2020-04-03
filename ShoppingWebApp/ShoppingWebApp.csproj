@@ -16,10 +16,15 @@
     <Folder Include="Views\Shared\Components\CategoryMenu\" />
     <Folder Include="Views\Shared\Components\FeaturedProducts\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver.Core" Version="2.10.2" />
     <PackageReference Include="MongoDB.Driver" Version="2.10.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />

@@ -19,7 +19,7 @@ namespace ShoppingWebApp.Services
         private IGenericService<Image> _images;
         private IGenericService<ProductAttribute> _attributes;
         private IGenericService<ProductCategory> _prdctgrys;
-
+        private IGenericService<Order> _orders;
 
         public IProductService Products
         {
@@ -55,6 +55,13 @@ namespace ShoppingWebApp.Services
             get
             {
                 return _prdctgrys ?? (_prdctgrys = new GenericService<ProductCategory>(settings));
+            }
+        }
+        public IGenericService<Order> Orders
+        {
+            get
+            {
+                return _orders ?? (_orders = new GenericService<Order>(settings));
             }
         }
     }

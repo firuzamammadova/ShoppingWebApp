@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using ShoppingWebApp.Services;
 using ShoppingWebApp.ViewModels;
 
@@ -61,27 +62,20 @@ namespace ShoppingWebApp.Controllers
                 );
         }
 
-  //      public IActionResult Details(int id)
-   //     {
-           // return View(uow.Products
-            //    .GetAll()
-           //     .Where(i => Convert.ToUInt32(i.Id) == id)
-           //     .Include(i => i.Images)
-            //    .Include(i => i.Attributes)
-             //   .Include(i => i.ProductCategories)
-             //   .ThenInclude(i => i.Category)
-            //    .Select(i => new ProductDetailsModel()
-             //   {
-              //      Product = i,
-              //      ProductImages = i.Images,
-              //      ProductAttributes = i.Attributes,
-              //      Categories = i.ProductCategories.Select(a => a.Category).ToList()
-              //  })
-              //  .FirstOrDefault());
+        public IActionResult Details(int id)
+       {
+            var a = new ProductDetailsModel();
+            ObjectId objectId = new ObjectId(id.ToString());
+            var Product = uow.Products.GetAll().Where(i=>i.Id==objectId).FirstOrDefault();
+            a.Product = Product;
+            a.ProductImages = Product.Images;
+            a.ProductAttributes = Product.Attributes;
+            a.Categories = Product.ProductCategories.Select(a => a.Category).ToList();
+           return View(a);
 
 
 
 
-//        }
+       }
     }
 }

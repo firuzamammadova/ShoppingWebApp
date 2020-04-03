@@ -1,6 +1,16 @@
-﻿namespace ShoppingWebApp.Models
+﻿using MongoDB.Bson;
+
+namespace ShoppingWebApp.Models
 {
-    internal class OrderLine
+    public class OrderLine : Document
     {
+        public ObjectId OrderId { get; set; }
+        public virtual Order Order { get; set; }
+
+        public ObjectId ProductId { get; set; }
+        public virtual Product Product { get; set; }
+
+        public int Quantity { get; set; }
+        public double Price { get; set; }
     }
 }
