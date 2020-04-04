@@ -31,8 +31,8 @@ namespace ShoppingWebApp.Services
             _collection.Find(book => true).ToList().AsQueryable();
 
         public TDocument Get(string id) {
-            var objectId = new ObjectId(id);
-            return _collection.Find<TDocument>(book => book.Id == objectId).FirstOrDefault();
+            //var objectId = new ObjectId(id);
+            return _collection.Find<TDocument>(book => book.Id == id).FirstOrDefault();
         }
 
         public void Add(TDocument book)
@@ -47,8 +47,8 @@ namespace ShoppingWebApp.Services
 
         public void Edit(string id, TDocument bookIn)
         {
-            var objectId = new ObjectId(id);
-            _collection.ReplaceOne(book => book.Id == objectId, bookIn);
+            //var objectId = new ObjectId(id);
+            _collection.ReplaceOne(book => book.Id == id, bookIn);
         }
 
         public void Delete(TDocument bookIn) =>
@@ -56,8 +56,8 @@ namespace ShoppingWebApp.Services
 
         public void Delete(string id)
         {
-            var objectId = new ObjectId(id);
-            _collection.DeleteOne(book => book.Id == objectId);
+           // var objectId = new ObjectId(id);
+            _collection.DeleteOne(book => book.Id == id);
         }
 
         public TDocument Get(int id)

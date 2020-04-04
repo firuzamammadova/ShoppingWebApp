@@ -35,8 +35,10 @@ namespace ShoppingWebApp.Controllers
             var categories = uow.Categories.GetAll();
             if (!string.IsNullOrEmpty(category))
             {
-                var categoryId = categories.FirstOrDefault(i => i.CategoryName == category);
-                products = productService.GetProductsByCategory(categoryId).AsQueryable();
+                //var categoryId = categories.FirstOrDefault(i => i.CategoryName == category);
+                var categoryy = uow.Categories.GetByName(category);
+                products = uow.ProductCategories.GetAll().Where(i => i.Category == categoryy).Select(i => i.Product);
+               // products = productService.GetProductsByCategory(categoryId).AsQueryable();
                 // products = products.ToList()
                 //     .Include(i => i.ProductCategories)
                 //     .ThenInclude(i => i.Category)
@@ -61,16 +63,16 @@ namespace ShoppingWebApp.Controllers
                 }
                 );
         }
-
-        public IActionResult Details(int id)
+        
+        public IActionResult Details(string id)
        {
+            var Product = uow.Products.GetAll().Where(i=>i.Id==id).FirstOrDefault();
             var a = new ProductDetailsModel();
-            ObjectId objectId = new ObjectId(id.ToString());
-            var Product = uow.Products.GetAll().Where(i=>i.Id==objectId).FirstOrDefault();
+
             a.Product = Product;
-            a.ProductImages = Product.Images;
-            a.ProductAttributes = Product.Attributes;
-            a.Categories = Product.ProductCategories.Select(a => a.Category).ToList();
+            a.ProductImages = uow.Images.GetAll().Where(i => i.Product.Id == Product.Id).ToList();
+            a.ProductAttributes = uow.Attributes.GetAll().Where(i => i.Product.Id == Product.Id).ToList();
+            a.Categories = uow.ProductCategories.GetAll().Where(i=>i.Product.Id==Product.Id).Select(a => a.Category).ToList();
            return View(a);
 
 
