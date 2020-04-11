@@ -6,13 +6,13 @@ namespace ShoppingWebApp.Models
 {
     public class Document : IDocument
     {
-        public string Id { get; set; }
+        public ObjectId Id { get; set; }
     }
 
     public interface IDocument
     {
         [BsonId]
         [BsonRepresentation(BsonType.String)]
-        string Id { get; set; }
+        ObjectId Id { get; set; }
     }
 }

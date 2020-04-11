@@ -1,4 +1,6 @@
 ﻿using System;
+using MongoDB.Bson;
+
 namespace ShoppingWebApp.Models
 {
     [BsonCollection("Attributes")]
@@ -10,7 +12,7 @@ namespace ShoppingWebApp.Models
         public string Attribute { get; set; }
         public string Value { get; set; }
 
-        public int ProductId { get; set; }
+        public ObjectId ProductId { get; set; }
         public Product Product { get; set; }
     }
 }

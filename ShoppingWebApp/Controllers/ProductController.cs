@@ -66,7 +66,8 @@ namespace ShoppingWebApp.Controllers
         
         public IActionResult Details(string id)
        {
-            var Product = uow.Products.GetAll().Where(i=>i.Id==id).FirstOrDefault();
+            ObjectId objectId = new ObjectId(id);
+            var Product = uow.Products.GetAll().Where(i=>i.Id==objectId).FirstOrDefault();
             var a = new ProductDetailsModel();
 
             a.Product = Product;
