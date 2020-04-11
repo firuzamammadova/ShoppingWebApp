@@ -15,8 +15,7 @@ namespace ShoppingWebApp.Infrastructure
         {
             var data = session.GetString(key);
 
-            return data == null ?
-                default(T) : JsonConvert.DeserializeObject<T>(data);
+            return data == null ? default : JsonConvert.DeserializeObject<T>(data);
         }
 
     }

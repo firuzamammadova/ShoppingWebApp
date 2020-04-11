@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using MongoDB.Bson;
 using ShoppingWebApp.Models;
 
 namespace ShoppingWebApp.Services
 {
     public interface IGenericService<TDocument> where TDocument:IDocument 
     {
-        TDocument Get(int id);
+        TDocument Get(ObjectId id);
         IQueryable<TDocument> GetAll();
         IQueryable<TDocument> Find(Expression<Func<TDocument, bool>> predicate);
         void Add(TDocument document);

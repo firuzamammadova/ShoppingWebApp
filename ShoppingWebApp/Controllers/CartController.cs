@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using ShoppingWebApp.Infrastructure;
 using ShoppingWebApp.Models;
 using ShoppingWebApp.Services;
@@ -27,9 +28,10 @@ namespace ShoppingWebApp.Controllers
             return View(GetCart());
         }
 
-        public IActionResult AddToCart(int ProductId, int quantity = 1)
+        public IActionResult AddToCart(string ProductId, int quantity = 1)
         {
-            var product = unitofWork.Products.Get(ProductId);
+            ObjectId id = new ObjectId(ProductId);
+            var product = unitofWork.Products.Get(id);
 
             if (product != null)
             {
@@ -41,9 +43,10 @@ namespace ShoppingWebApp.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult RemoveFromCart(int ProductId)
+        public IActionResult RemoveFromCart(string ProductId)
         {
-            var product = unitofWork.Products.Get(ProductId);
+            ObjectId id = new ObjectId(ProductId);
+            var product = unitofWork.Products.Get(id);
 
             if (product != null)
             {

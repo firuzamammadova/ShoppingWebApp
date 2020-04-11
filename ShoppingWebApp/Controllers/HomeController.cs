@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using ShoppingWebApp.Models;
 using ShoppingWebApp.Services;
 
@@ -19,16 +20,19 @@ namespace ShoppingWebApp.Controllers
         {
             uow = _uow;
         }
-        public IActionResult Details(int id)
+        public IActionResult Details(string id)
         {
-            return View(uow.Products.Get(id));
+            ObjectId objectId = new ObjectId(id);
+            return View(uow.Products.Get(objectId));
         }
 
 
         [HttpGet("{id:length(24)}", Name = "GetProduct")]
-        public ActionResult<Product> Get(int id)
+        public ActionResult<Product> Get(string id)
         {
-            var product = uow.Products.Get(id);
+            ObjectId objectId = new ObjectId(id);
+
+            var product = uow.Products.Get(objectId);
 
             if (product == null)
             {

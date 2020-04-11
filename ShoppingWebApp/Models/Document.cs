@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using Newtonsoft.Json;
 
 namespace ShoppingWebApp.Models
 {
@@ -12,7 +13,8 @@ namespace ShoppingWebApp.Models
     public interface IDocument
     {
         [BsonId]
-        [BsonRepresentation(BsonType.String)]
+        [BsonRepresentation(BsonType.ObjectId)]
+        [JsonConverter(typeof(ObjectIdConverter))]
         ObjectId Id { get; set; }
     }
 }

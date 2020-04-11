@@ -60,10 +60,7 @@ namespace ShoppingWebApp.Services
             _collection.DeleteOne(book => book.Id == id);
         }
 
-        public TDocument Get(int id)
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public IQueryable<TDocument> Find(Expression<Func<TDocument, bool>> predicate)
         {

@@ -39,6 +39,9 @@ namespace ShoppingWebApp
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             //services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
             services.AddControllers();
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +53,8 @@ namespace ShoppingWebApp
             }
 
             app.UseStaticFiles();
+            app.UseStatusCodePages();
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -1,39 +1,43 @@
 ﻿<Properties StartupConfiguration="{FC5E0D10-E06D-4F0A-B1C9-1D22C6E8BA4B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/Views/Cart/Index.cshtml">
     <Files>
-      <File FileName="ShoppingWebApp/Controllers/ProductController.cs" Line="67" Column="44" />
+      <File FileName="ShoppingWebApp/Controllers/ProductController.cs" Line="54" Column="39" />
       <File FileName="ShoppingWebApp/Services/ProductService.cs" />
       <File FileName="ShoppingWebApp/Models/Product.cs" Line="1" Column="1" />
-      <File FileName="ShoppingWebApp/Models/ProductCategory.cs" Line="12" Column="22" />
+      <File FileName="ShoppingWebApp/Models/ProductCategory.cs" Line="9" Column="24" />
       <File FileName="ShoppingWebApp/Services/IProductService.cs" />
-      <File FileName="ShoppingWebApp/Controllers/HomeController.cs" Line="116" Column="77" />
+      <File FileName="ShoppingWebApp/Controllers/HomeController.cs" Line="35" Column="53" />
       <File FileName="ShoppingWebApp/Models/Category.cs" />
-      <File FileName="ShoppingWebApp/Models/Image.cs" Line="11" Column="22" />
-      <File FileName="ShoppingWebApp/Models/ProductAttribute.cs" Line="13" Column="22" />
-      <File FileName="ShoppingWebApp/Services/GenericService.cs" Line="56" Column="1" />
-      <File FileName="ShoppingWebApp/Services/IGenericService.cs" />
+      <File FileName="ShoppingWebApp/Models/Image.cs" Line="13" Column="24" />
+      <File FileName="ShoppingWebApp/Models/ProductAttribute.cs" Line="15" Column="24" />
+      <File FileName="ShoppingWebApp/Services/GenericService.cs" Line="63" Column="8" />
+      <File FileName="ShoppingWebApp/Services/IGenericService.cs" Line="12" Column="31" />
       <File FileName="ShoppingWebApp/Services/UnitOfWork.cs" />
       <File FileName="ShoppingWebApp/Services/IUnitOfWork.cs" />
       <File FileName="ShoppingWebApp/Views/Shared/Components/CategoryMenu/Default.cshtml" />
       <File FileName="ShoppingWebApp/Components/CategoryMenu.cs" />
-      <File FileName="ShoppingWebApp/Services/CategoryService.cs" />
-      <File FileName="ShoppingWebApp/ViewModels/CategoryModel.cs" />
+      <File FileName="ShoppingWebApp/Services/CategoryService.cs" Line="24" Column="55" />
+      <File FileName="ShoppingWebApp/ViewModels/CategoryModel.cs" Line="8" Column="24" />
       <File FileName="ShoppingWebApp/Views/Home/Index.cshtml" />
       <File FileName="ShoppingWebApp/Views/Shared/_ProductItem.cshtml" />
       <File FileName="ShoppingWebApp/Services/ICategoryService.cs" />
       <File FileName="ShoppingWebApp/Models/Order.cs" />
-      <File FileName="ShoppingWebApp/Models/OrderLine.cs" />
+      <File FileName="ShoppingWebApp/Models/OrderLine.cs" Line="10" Column="24" />
       <File FileName="ShoppingWebApp/Controllers/OrderController.cs" />
-      <File FileName="ShoppingWebApp/Controllers/CartController.cs" />
+      <File FileName="ShoppingWebApp/Controllers/CartController.cs" Line="125" Column="50" />
       <File FileName="ShoppingWebApp/ViewModels/OrderDetails.cs" />
-      <File FileName="ShoppingWebApp/Infrastructure/SessionExtensions.cs" />
+      <File FileName="ShoppingWebApp/Infrastructure/SessionExtensions.cs" Line="18" Column="34" />
       <File FileName="ShoppingWebApp/Views/Product/List.cshtml" />
       <File FileName="ShoppingWebApp/ViewModels/PagingModels.cs" />
       <File FileName="ShoppingWebApp/Views/Product/Details.cshtml" />
       <File FileName="ShoppingWebApp/ViewModels/ProductDetailsModel.cs" />
-      <File FileName="ShoppingWebApp/Models/Document.cs" Line="16" Column="15" />
+      <File FileName="ShoppingWebApp/Models/Document.cs" Line="17" Column="18" />
       <File FileName="ShoppingWebApp/appsettings.json" Line="5" Column="35" />
       <File FileName="ShoppingWebApp/Models/ShoppingDatabaseSettings.cs" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/Startup.cs" Line="55" Column="34" />
+      <File FileName="ShoppingWebApp/ViewModels/Cart.cs" Line="8" Column="18" />
+      <File FileName="ShoppingWebApp/Models/ObjectIdConverter.cs" Line="11" Column="44" />
+      <File FileName="ShoppingWebApp/Views/Cart/Index.cshtml" Line="107" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -46,11 +50,13 @@
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Cart" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Home" expanded="True" />
                 <Node name="Product" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>

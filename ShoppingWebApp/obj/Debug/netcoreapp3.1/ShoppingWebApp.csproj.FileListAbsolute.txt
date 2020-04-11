@@ -42,3 +42,4 @@
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/Details.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/List.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Cart/Index.cshtml.g.cs
