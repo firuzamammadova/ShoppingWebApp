@@ -37,7 +37,7 @@ namespace ShoppingWebApp.Controllers
             {
                 //var categoryId = categories.FirstOrDefault(i => i.CategoryName == category);
                 var categoryy = uow.Categories.GetByName(category);
-                products = uow.ProductCategories.GetAll().Where(i => i.Category == categoryy).Select(i => i.Product);
+                products = uow.ProductCategories.GetAll().Where(i => i.Category.CategoryName == category).Select(i => i.Product);
                // products = productService.GetProductsByCategory(categoryId).AsQueryable();
                 // products = products.ToList()
                 //     .Include(i => i.ProductCategories)

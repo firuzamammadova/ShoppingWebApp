@@ -49,7 +49,7 @@ namespace ShoppingWebApp.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-          
+          /*
                 var products = new[]
                 {
                     new Product(){  ProductName="Photo Camera", Price=153, Image="product1.jpg",IsHome=true,IsApproved=true,IsFeatured=true, Description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae vehicula enim. Sed quis ante quis eros maximus dignissim a eu mi. Proin varius arcu metus.", HtmlContent="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae vehicula enim. Sed quis ante quis eros maximus dignissim a eu mi. <b>Proin varius arcu metus.</b>", DateAdded=DateTime.Now.AddDays(-10)},
@@ -148,7 +148,7 @@ namespace ShoppingWebApp.Controllers
 
                 };
 
-                uow.Attributes.AddMany(attributes);
+                uow.Attributes.AddMany(attributes);*/
                 return View(uow.Products.GetAll());
 
         }
