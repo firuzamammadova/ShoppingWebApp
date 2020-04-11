@@ -43,3 +43,5 @@
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/Details.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Product/List.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Cart/Index.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Cart/Checkout.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Cart/Completed.cshtml.g.cs

@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{FC5E0D10-E06D-4F0A-B1C9-1D22C6E8BA4B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/Views/Cart/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/Views/Cart/Completed.cshtml">
     <Files>
       <File FileName="ShoppingWebApp/Controllers/ProductController.cs" Line="54" Column="39" />
       <File FileName="ShoppingWebApp/Services/ProductService.cs" />
@@ -37,7 +37,9 @@
       <File FileName="ShoppingWebApp/Startup.cs" Line="55" Column="34" />
       <File FileName="ShoppingWebApp/ViewModels/Cart.cs" Line="8" Column="18" />
       <File FileName="ShoppingWebApp/Models/ObjectIdConverter.cs" Line="11" Column="44" />
-      <File FileName="ShoppingWebApp/Views/Cart/Index.cshtml" Line="107" Column="11" />
+      <File FileName="ShoppingWebApp/Views/Cart/Index.cshtml" Line="45" Column="104" />
+      <File FileName="ShoppingWebApp/Views/Cart/Checkout.cshtml" Line="15" Column="23" />
+      <File FileName="ShoppingWebApp/Views/Cart/Completed.cshtml" Line="5" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -51,7 +53,7 @@
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Cart" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                  <Node name="Completed.cshtml" selected="True" />
                 </Node>
                 <Node name="Home" expanded="True" />
                 <Node name="Product" expanded="True" />
