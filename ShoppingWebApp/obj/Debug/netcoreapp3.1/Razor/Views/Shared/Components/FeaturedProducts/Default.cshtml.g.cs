@@ -19,8 +19,15 @@ using ShoppingWebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/_ViewImports.cshtml"
+using ShoppingWebApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"21c69a464f6a541ef9ae9a5211c27d69abad2cbe", @"/Views/Shared/Components/FeaturedProducts/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f1a700698b8811faf213ea0e241023787dc06c0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fca04c1363b6b007505b54cf17041c9343d6943f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_FeaturedProducts_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ShoppingWebApp.Models.Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Product", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -74,7 +81,7 @@ WriteAttributeValue("", 360, item.Image, 360, 11, false);
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">\r\n                </a>\r\n                <div class=\"media-body\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21c69a464f6a541ef9ae9a5211c27d69abad2cbe5310", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "21c69a464f6a541ef9ae9a5211c27d69abad2cbe5505", async() => {
 #nullable restore
 #line 17 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/Shared/Components/FeaturedProducts/Default.cshtml"
                                                                 Write(item.ProductName);

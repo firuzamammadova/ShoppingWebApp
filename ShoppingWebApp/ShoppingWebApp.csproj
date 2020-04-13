@@ -22,6 +22,7 @@
     <Folder Include="Views\Cart\" />
     <Folder Include="IdentityCore\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver.Core" Version="2.10.2" />

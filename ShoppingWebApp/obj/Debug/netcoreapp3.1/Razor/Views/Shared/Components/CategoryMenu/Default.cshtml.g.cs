@@ -19,8 +19,15 @@ using ShoppingWebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/_ViewImports.cshtml"
+using ShoppingWebApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"39dfca46c2f6d6ca95097143e8ef17ec766116c9", @"/Views/Shared/Components/CategoryMenu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f1a700698b8811faf213ea0e241023787dc06c0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fca04c1363b6b007505b54cf17041c9343d6943f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_CategoryMenu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ShoppingWebApp.ViewModels.CategoryModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Product", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,7 +67,7 @@ using ShoppingWebApp.Models;
 #line hidden
 #nullable disable
             WriteLiteral("            <li>\r\n                <i class=\"fa fa-angle-right fa-fw\" aria-hidden=\"true\"></i>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39dfca46c2f6d6ca95097143e8ef17ec766116c94248", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39dfca46c2f6d6ca95097143e8ef17ec766116c94443", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 14 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/Shared/Components/CategoryMenu/Default.cshtml"

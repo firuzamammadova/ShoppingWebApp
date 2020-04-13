@@ -19,8 +19,15 @@ using ShoppingWebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/_ViewImports.cshtml"
+using ShoppingWebApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a72b3f25b176538423455afdf6c0464fd4594cc0", @"/Views/Product/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f1a700698b8811faf213ea0e241023787dc06c0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fca04c1363b6b007505b54cf17041c9343d6943f", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingWebApp.ViewModels.ProductListModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-inline"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +65,7 @@ using ShoppingWebApp.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<section id=\"content\">\r\n\r\n    <section id=\"shop\" class=\"container\">\r\n\r\n        <div class=\"row\">\r\n\r\n            <!-- sidebar start -->\r\n            <div id=\"sidebar\" class=\"col-md-3\">\r\n\r\n                <div class=\"widget\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a72b3f25b176538423455afdf6c0464fd4594cc03911", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a72b3f25b176538423455afdf6c0464fd4594cc04106", async() => {
                 WriteLiteral(@"
                         <div class=""input-group"">
                             <input type=""text"" class=""form-control input-lg"" placeholder=""Search..."">

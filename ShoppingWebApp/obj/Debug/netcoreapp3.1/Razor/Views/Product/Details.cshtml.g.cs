@@ -19,8 +19,15 @@ using ShoppingWebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/_ViewImports.cshtml"
+using ShoppingWebApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74187d2a206b163edd83d47f0a4743a30f9f02ce", @"/Views/Product/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f1a700698b8811faf213ea0e241023787dc06c0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fca04c1363b6b007505b54cf17041c9343d6943f", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingWebApp.ViewModels.ProductDetailsModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-inline"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -75,7 +82,7 @@ using ShoppingWebApp.Models;
                 <!-- search widget start -->
                 <div class=""widget"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce4919", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce5114", async() => {
                 WriteLiteral(@"
                         <div class=""input-group"">
                             <input type=""text"" class=""form-control input-lg"" placeholder=""Search..."">
@@ -192,7 +199,7 @@ WriteAttributeValue("", 2108, img.ImageName, 2108, 14, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n\r\n                                <div class=\"padding15\">\r\n\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce11046", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce11241", async() => {
                 WriteLiteral("\r\n\r\n                                        <input type=\"hidden\" name=\"ProductId\"");
                 BeginWriteAttribute("value", " value=\"", 3270, "\"", 3295, 1);
 #nullable restore
@@ -402,7 +409,7 @@ WriteAttributeValue("", 3278, Model.Product.Id, 3278, 17, false);
 
                        ");
             WriteLiteral("         <p class=\"text-muted\">You must be logged in to add a review.</p>\r\n\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce23020", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74187d2a206b163edd83d47f0a4743a30f9f02ce23215", async() => {
                 WriteLiteral("\r\n                                    <div class=\"row\">\r\n                                        <div class=\"form-group col-xs-6\">\r\n                                            <input type=\"text\" class=\"form-control input-lg\" placeholder=\"Name*\"");
                 BeginWriteAttribute("required", " required=\"", 10485, "\"", 10496, 0);
                 EndWriteAttribute();

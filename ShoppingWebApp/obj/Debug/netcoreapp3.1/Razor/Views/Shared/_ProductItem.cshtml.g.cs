@@ -19,8 +19,15 @@ using ShoppingWebApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/_ViewImports.cshtml"
+using ShoppingWebApp.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"952a2c2d2dd0ecb9162f2cf8feb64107c902d2cb", @"/Views/Shared/_ProductItem.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f1a700698b8811faf213ea0e241023787dc06c0", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fca04c1363b6b007505b54cf17041c9343d6943f", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ProductItem : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingWebApp.Models.Product>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Product", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +71,7 @@ WriteAttributeValue("", 288, Model.Image, 288, 12, false);
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">\r\n            <div class=\"mask\"></div>\r\n            <ul class=\"list-unstyled list-inline\">\r\n                <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "952a2c2d2dd0ecb9162f2cf8feb64107c902d2cb4488", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "952a2c2d2dd0ecb9162f2cf8feb64107c902d2cb4683", async() => {
                 WriteLiteral("<i class=\"fa fa-link fa-fw\"></i>");
             }
             );
@@ -97,7 +104,7 @@ WriteAttributeValue("", 288, Model.Image, 288, 12, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                <li><a href=\"#\"><i class=\"fa fa-cart-plus fa-fw\"></i></a></li>\r\n            </ul>\r\n        </div>\r\n        <div class=\"product-item-inner\">\r\n            <h3 class=\"product-title\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "952a2c2d2dd0ecb9162f2cf8feb64107c902d2cb7121", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "952a2c2d2dd0ecb9162f2cf8feb64107c902d2cb7316", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 18 "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/Views/Shared/_ProductItem.cshtml"

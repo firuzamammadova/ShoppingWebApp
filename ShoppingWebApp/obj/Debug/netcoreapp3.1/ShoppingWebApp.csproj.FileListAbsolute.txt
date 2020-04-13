@@ -64,3 +64,8 @@
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/bin/Debug/netcoreapp3.1/MongoDbGenericRepository.dll
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
 /Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.MongoDB.dll
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Admin/AddProduct.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Admin/CatalogList.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Admin/EditCategory.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_addCategoryForm.cshtml.g.cs
+/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AdminLayout.cshtml.g.cs
