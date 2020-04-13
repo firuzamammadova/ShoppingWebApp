@@ -2,6 +2,8 @@
 
 namespace ShoppingWebApp.Models
 {
+    [BsonCollection("OrderLines")]
+
     public class OrderLine : Document
     {
         public ObjectId OrderId { get; set; }

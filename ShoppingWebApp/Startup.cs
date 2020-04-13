@@ -2,15 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore.Identity.MongoDbCore.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using ShoppingWebApp.IdentityCore;
 using ShoppingWebApp.Models;
 using ShoppingWebApp.Services;
+using Microsoft.AspNetCore.Identity.MongoDB;
+using AspNetCore.Identity.MongoDbCore.Infrastructure;
 
 namespace ShoppingWebApp
 {
@@ -33,6 +38,22 @@ namespace ShoppingWebApp
 
             services.AddSingleton<IShoppingDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<ShoppingDatabaseSettings>>().Value);
+
+
+            // services.AddIdentity<ApplicationUser, MongoIdentityRole>()
+            //    .AddMongoDbStores<IdentityMongoDbContext>(new IdentityMongoDbContext()).AddDefaultTokenProviders();
+
+            var mongoSettings = Configuration.GetSection(nameof(MongoDbSettings));
+            var settings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
+
+            services.AddSingleton<MongoDbSettings>(settings);
+
+            services.AddIdentity<ApplicationUser, MongoIdentityRole>()
+                    .AddMongoDbStores<ApplicationUser, MongoIdentityRole, Guid>(settings.ConnectionString, settings.DatabaseName)
+                    .AddSignInManager()
+                    .AddDefaultTokenProviders();
+
+
             services.AddSingleton(typeof(IGenericService<>),typeof(GenericService<>));
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IProductService, ProductService>();
@@ -51,16 +72,21 @@ namespace ShoppingWebApp
             {
                 app.UseDeveloperExceptionPage();
             }
-
+          
             app.UseStaticFiles();
             app.UseStatusCodePages();
             app.UseSession();
+
+            app.UseAuthentication();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+           // SeedIdentity.CreateIdentityUsers(app.ApplicationServices, Configuration).Wait();
+
         }
     }
 }

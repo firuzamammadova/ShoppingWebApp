@@ -14,7 +14,7 @@
         "outputPath": "/Users/zarifamammadova/Projects/ShoppingWebApp/ShoppingWebApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/zarifamammadova/.config/NuGet/NuGet.Config"
+          "/Users/zarifamammadova/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -36,6 +36,18 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AspNetCore.Identity.Mongo": {
+              "target": "Package",
+              "version": "[6.7.0, )"
+            },
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.MongoDB": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.10.2, )"

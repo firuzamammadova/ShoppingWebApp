@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ShoppingWebApp.Models
 {
+    [BsonCollection("Orders")]
+
     public class Order : Document
     {
 
