@@ -1,31 +1,40 @@
 ﻿<Properties StartupConfiguration="{FC5E0D10-E06D-4F0A-B1C9-1D22C6E8BA4B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/ViewModels/AdminCatalogModels.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ShoppingWebApp/Views/Account/Login.cshtml">
     <Files>
-      <File FileName="ShoppingWebApp/Controllers/AdminController.cs" Line="69" Column="15" />
-      <File FileName="ShoppingWebApp/ViewModels/AdminCatalogModels.cs" Line="15" Column="23" />
-      <File FileName="ShoppingWebApp/ViewModels/CatalogListModel.cs" Line="9" Column="19" />
-      <File FileName="ShoppingWebApp/Views/Admin/CatalogList.cshtml" Line="3" Column="39" />
-      <File FileName="ShoppingWebApp/Views/Shared/_addCategoryForm.cshtml" Line="25" Column="7" />
-      <File FileName="ShoppingWebApp/Views/Shared/_AdminLayout.cshtml" Line="131" Column="1" />
-      <File FileName="ShoppingWebApp/Views/Admin/EditCategory.cshtml" Line="19" Column="15" />
-      <File FileName="ShoppingWebApp/Views/Admin/AddProduct.cshtml" Line="29" Column="7" />
-      <File FileName="ShoppingWebApp/Views/_ViewImports.cshtml" Line="4" Column="33" />
-      <File FileName="ShoppingWebApp/Models/ProductCategory.cs" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/Controllers/AdminController.cs" Line="125" Column="106" />
+      <File FileName="ShoppingWebApp/ViewModels/AdminCatalogModels.cs" />
+      <File FileName="ShoppingWebApp/ViewModels/CatalogListModel.cs" />
+      <File FileName="ShoppingWebApp/Views/Admin/CatalogList.cshtml" Line="25" Column="38" />
+      <File FileName="ShoppingWebApp/Views/Shared/_addCategoryForm.cshtml" />
+      <File FileName="ShoppingWebApp/Views/Shared/_AdminLayout.cshtml" />
+      <File FileName="ShoppingWebApp/Views/Admin/EditCategory.cshtml" />
+      <File FileName="ShoppingWebApp/Views/Admin/AddProduct.cshtml" />
+      <File FileName="ShoppingWebApp/Views/_ViewImports.cshtml" />
+      <File FileName="ShoppingWebApp/Models/ProductCategory.cs" />
       <File FileName="ShoppingWebApp/Controllers/CategoryController.cs" Line="1" Column="1" />
-      <File FileName="ShoppingWebApp/Controllers/ProductController.cs" Line="40" Column="129" />
-      <File FileName="ShoppingWebApp/ViewModels/CategoryModel.cs" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/Controllers/ProductController.cs" />
+      <File FileName="ShoppingWebApp/ViewModels/CategoryModel.cs" />
+      <File FileName="ShoppingWebApp/Services/CategoryService.cs" Line="11" Column="6" />
+      <File FileName="ShoppingWebApp/Controllers/HomeController.cs" Line="193" Column="56" />
+      <File FileName="ShoppingWebApp/Components/CategoryMenu.cs" Line="24" Column="35" />
+      <File FileName="ShoppingWebApp/Services/IUnitOfWork.cs" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/Services/UnitOfWork.cs" Line="1" Column="1" />
+      <File FileName="ShoppingWebApp/Views/Shared/_Layout.cshtml" Line="53" Column="170" />
+      <File FileName="ShoppingWebApp/Controllers/AccountController.cs" Line="38" Column="82" />
+      <File FileName="ShoppingWebApp/Views/Account/Login.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ShoppingWebApp" expanded="True">
             <Node name="ShoppingWebApp" expanded="True">
+              <Node name="Components" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="AdminCatalogModels.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Admin" expanded="True" />
+                <Node name="Account" expanded="True">
+                  <Node name="Login.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>
